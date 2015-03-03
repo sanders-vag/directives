@@ -1,0 +1,24 @@
+{
+  "name": "directives",
+  "version": "1.0.0",
+  "description": "Directives project of AngularJS",
+  "authors": [
+    "sandra.ga86@gmail.com"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies":{
+    "angular": "*",
+    "angular-route": "*",
+    "angular-resource": "*",
+    "jquery": "*",
+    "bootstrap": "*"
+  }
+}

@@ -1,0 +1,42 @@
+li.sortable {
+	cursor: pointer;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px;
+	background-color: #fff;
+	color: #337ab7;
+	border: #337ab7 2px solid;
+	list-style: none;
+	font-weight: bold;	
+}
+
+li.clicked {
+	background-color: rgb(51, 122, 183);
+	color: white;
+	font-weight: bold;
+}
+
+#sort-buttons {
+	position: absolute;
+	top: 50%;
+}
+
+.header {
+	margin: 0 0 40px 20px;
+	color: #337AB7;
+}
+
+.blue-badge {
+	float: right;
+	background-color: rgb(51, 122, 183);
+}
+
+.clicked .blue-badge {
+	background-color: white;
+	color: rgb(51, 122, 183);
+}
+
+body {
+	background-color: rgb(244, 245, 244);
+}

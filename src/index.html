@@ -1,0 +1,48 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>
+    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+        <!--[if IE 8]>
+        <html class="no-js lt-ie9"> <![endif]-->
+            <!--[if gt IE 8]><!-->
+            <html class="no-js"> <!--<![endif]-->
+            <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>directives</title>
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width">
+                <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+                <!-- build:css(.tmp) styles/main.css -->
+                <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+                <link rel="stylesheet" href="css/main.css">
+                <!-- endbuild -->
+            </head>
+            <body ng-app="directivesApp">
+                <div ng-controller="appCtrl">
+                   <div class="header">
+                       <h2>Sortable list directive</h2>
+                   </div>
+
+                   <h5>List of users</h5>
+                    <my-sortable-group>
+                        <my-sortable item="item" ng-repeat="item in itemList | orderBy: 'index'">
+                            {{ item.firstName }}  {{ item.lastName }}
+                            <span class="badge blue-badge">{{item.index}}</span>
+                        </my-sortable>
+                    </my-sortable-group>
+                        
+                </div>      
+                <!-- build:js scripts/scripts.js -->
+                <script src="bower_components/jquery/dist/jquery.js"></script>
+                <script src="bower_components/angular/angular.min.js"></script>
+                <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+                <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+                <script src="bower_components/angular-route/angular-route.js"></script>
+                <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+                <script src="app.js"></script>
+                <script src="js/sortableList.js"></script>
+                <!-- endbuild -->
+            </body>
+        </html>
